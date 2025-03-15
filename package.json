@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "The coding canal",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "bddGen": "npx bddGen",
+    "test": "playwright test --reporter=html,list"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anshah85/PlayWright-Testing.git"

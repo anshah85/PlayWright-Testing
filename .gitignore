@@ -147,3 +147,6 @@ dist
 # VSCode
 .vscode
 .history
+
+# Cucumber
+.features-gen/
