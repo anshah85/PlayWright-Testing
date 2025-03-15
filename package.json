@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "bddGen": "npx bddGen",
-    "test": "playwright test --reporter=html,list"
+    "test": "npm run bddGen && npm run playwright-test",
+    "playwright-test": "npx playwright test --reporter=html,list --headed"
   },
   "repository": {
     "type": "git",

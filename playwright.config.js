@@ -3,8 +3,11 @@ import { defineConfig, devices } from '@playwright/test';
 import { defineBddConfig } from 'playwright-bdd';
 
 const testDir = defineBddConfig({
+  // fixture: ['tests/fixtures/fixtures.js'],
+  // fixtures: ['tests/fixtures/*.js'],
+  importTestFrom: 'tests/fixtures/fixtures.js',
   paths: ['tests/features/*.feature'],
-  require: ['tests/stepDefs/*.js'],
+  require: ['tests/steps/*.js'],
 });
 
 /**
